@@ -85,31 +85,10 @@ kubectl logs -l app=kubehealth -f
 
 ```
 
-### 4. Deploy Crashing Workload
-
-Apply a "dummy" deployment designed to fail immediately to test the self-healing logic:
+### 4) Deploy crashing workload
 
 ```bash
-kubectl apply -f - <<'YAML'
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: crash-demo
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: crash-demo
-  template:
-    metadata:
-      labels:
-        app: crash-demo
-    spec:
-      containers:
-      - name: crash
-        image: busybox:1.36
-        command: ["sh", "-c", "echo crashing && sleep 1 && exit 1"]
-YAML
+kubectl apply -f crash.yaml
 
 ```
 
