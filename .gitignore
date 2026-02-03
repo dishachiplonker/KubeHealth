@@ -1,0 +1,13 @@
+# Binaries
+kubehealth
+*.exe
+*.out
+
+# Local kubeconfigs (can contain credentials)
+kubeconfig.*
+**/kubeconfig.*
+
+# OS/IDE
+.DS_Store
+.vscode/
+.idea/
