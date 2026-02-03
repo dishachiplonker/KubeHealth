@@ -38,7 +38,7 @@ The service runs in-cluster using namespace-scoped RBAC, exposes a `/healthz` en
 ```
 ---
 
-## Setup & Demo (≈ 3 min)
+## Setup & Demo
 
 ### Prerequisites
 
