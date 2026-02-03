@@ -38,7 +38,11 @@ The service runs in-cluster using namespace-scoped RBAC, exposes a `/healthz` en
 ```
 ---
 
-## Setup & Demo
+## Demo Video
+
+🎥 [Watch the demo](assets/kubehealth-demo.mp4)
+
+## Setup
 
 ### Prerequisites
 
