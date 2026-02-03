@@ -1,0 +1,21 @@
+# crash.yaml
+---
+# YAML file created
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crash-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: crash-demo
+  template:
+    metadata:
+      labels:
+        app: crash-demo
+    spec:
+      containers:
+      - name: crash
+        image: busybox:1.36
+        command: ["sh", "-c", "echo 'crashing now' && sleep 1 && exit 1"]
