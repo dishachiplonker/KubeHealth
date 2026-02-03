@@ -36,11 +36,6 @@ The service runs in-cluster using namespace-scoped RBAC, exposes a `/healthz` en
      |      Pod          |
      +-------------------+
 ```
-
-It looks like you’ve got a solid foundation for your `README.md`. I’ve cleaned up the syntax, fixed the command formatting, and streamlined the "Expected Behavior" section to make it punchier for a technical audience.
-
-Here is the corrected Markdown:
-
 ---
 
 ## Setup & Demo (≈ 3 min)
